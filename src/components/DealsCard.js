@@ -9,28 +9,31 @@ const DealsCard = (props)=>{
 
 <div className = "grid-item1"> <img src={props.image} alt="image"></img></div>
 
-<div className = "grid-item2"> <span style={{
+  <div className = "grid-item2"> 
+  
+      </div>
+
+<div className = "grid-item3"> 
+    <span style={{
       color: "blue",
       backgroundColor: "rgba(198, 189, 189, 0.5)",
-      padding: "6px 6px",
-      marginTop: "10px",
+      padding: "3px 3px",
+      marginBottom: "10px",
       borderRadius: "10px",
       marginRight:'5px'
     }}>{props.discount} </span>
     
-    
     <span style={{
       color: "blue",
       backgroundColor: "rgba(198, 189, 189, 0.5)",
-      padding: "6px 6px",
+      padding: "3px 3px",
       marginTop: "10px",
       borderRadius: "10px",
     }}>  {props.time} </span>
      
+     <br></br> <center> <h4>{props.title}</h4></center>   {props.desc} 
      
      </div>
-
-<div className = "grid-item3"> <center> <h4>{props.title}</h4></center><br></br>{props.desc} </div>
 
 <div className = "grid-item4">
 
@@ -42,7 +45,7 @@ const DealsCard = (props)=>{
    
    </div>  
 
-  <button className="deal_button">View Deal</button>      
+  <center><button className="deal_button">View Deal</button></center>      
 </div>
 </>
     );
