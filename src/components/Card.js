@@ -1,5 +1,5 @@
 import React from "react";
-import  { useState } from 'react';
+import  { useState } from "react";
 const Card =  (props)=>{
    const [showMore, setShowMore] = useState(false);
 
@@ -12,7 +12,7 @@ const Card =  (props)=>{
     <div className = "grid-container">
        <div className = "grid-item1">{props.id} {props.Tag}</div>
 
-       <div className = "grid-item2"> <img src={props.image}></img> <center>{props.title}</center></div>
+       <div className = "grid-item2"> <img src={props.image} alt="image"></img> <center>{props.title}</center></div>
 
        <div className = "grid-item3"> <h3>{props.desc_heading} </h3> {props.description}</div>
 

@@ -1,4 +1,4 @@
-import { left } from "inquirer/lib/utils/readline";
+
 import React from "react" ;
 
 const DealsCard = (props)=>{
@@ -7,7 +7,7 @@ const DealsCard = (props)=>{
 
 <div className ="grid-deals">
 
-<div className = "grid-item1"> <img src={props.image}></img></div>
+<div className = "grid-item1"> <img src={props.image} alt="image"></img></div>
 
 <div className = "grid-item2"> <span style={{
       color: "blue",

@@ -8,9 +8,9 @@ const Header = (props)=> {
    <hr></hr>
 <div className={styles.grid}>
 
-<div className="grid-item"><img src="./check.png"></img> Last updated - February 24 ,2024 </div>
-  <div className="grid-item"><img src="./info.png"></img> Advertising Disclosure </div>
-  <div className="grid-item"> Top Relevant <img src="./angle-small-down.png"></img> </div>
+<div className="grid-item"><img src="./check.png" alt="check image"></img> Last updated - February 24 ,2024 </div>
+  <div className="grid-item"><img src="./info.png" alt="info image"></img> Advertising Disclosure </div>
+  <div className="grid-item"> Top Relevant <img src="./angle-small-down.png" alt="image"></img> </div>
 </div>
   <hr></hr>
 
@@ -27,10 +27,10 @@ const Header = (props)=> {
 </div>
 <div className={styles.grid3}>
 
-<div className="grid-item">Home<img src="./angle-right.png"></img> </div>
-<div className="grid-item">Hosting for all<img src="./angle-right.png"></img> </div>
-<div className="grid-item">Hosting<img src="./angle-right.png"></img> </div>
-<div className="grid-item">Hosting6<img src="./angle-right.png"></img> </div>
+<div className="grid-item">Home<img src="./angle-right.png" alt="angle image"></img> </div>
+<div className="grid-item">Hosting for all<img src="./angle-right.png" alt="angle image"></img> </div>
+<div className="grid-item">Hosting<img src="./angle-right.png" alt="angle image"></img> </div>
+<div className="grid-item">Hosting6<img src="./angle-right.png" alt="angle image"></img> </div>
 <div className="grid-item"> Hosting5</div>
 
 </div>

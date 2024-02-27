@@ -5,7 +5,7 @@ const ButtonTag = (props)=>{
         <div className="tag">
        <div className="grid">
        <div className="grid-item1">
-       <img src = {props.image}></img> {props.text}</div></div>
+       <img src = {props.image}  alt="image"></img> {props.text}</div></div>
        
        </div>
     );
