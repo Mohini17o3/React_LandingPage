@@ -1,6 +1,5 @@
 
 import React from "react" ;
-
 const DealsCard = (props)=>{
     return(
      <>
