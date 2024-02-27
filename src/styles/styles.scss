@@ -1,0 +1,420 @@
+// styles.scss
+$navbar-bg: #212731;
+$link-color: white;
+$link-hover-color: blueviolet;
+$header-bg: #333;
+$search-bar-bg: #fff;
+$search-icon-color: #fff;
+$search-icon-hover-color: #ddd;
+
+
+// Styling for 3 Deals Card before the newsletter 
+
+.dealsCard{
+  display: grid;
+  grid-template-columns: 10fr 10fr 10fr  ;
+  column-gap: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
+
+}
+
+// styling for within the deal items 
+.grid-deals{
+  height: fit-content;
+ margin-bottom: 40px;
+  display: grid;
+  grid-template-rows: auto ;
+  background-color: rgba(255, 255, 255, 1);
+  row-gap: 0px;
+ padding: 10px;
+ border-radius: 10px;
+
+  .grid-item2{
+    .time{
+      color: blue;
+      background-color: rgba(198, 189, 189, 0.5); 
+      padding: 10px 6px; 
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    grid-template-rows:  auto; 
+  }
+
+  @media (max-width: 992px) {
+    grid-template-rows:  auto; 
+  }
+
+
+  @media (max-width: 768px) {
+    .grid-deals {
+      grid-template-rows: auto; 
+      margin-left: 20px; 
+      margin-right: 20px; 
+    }
+    
+    .grid-item1,
+    .grid-item2,
+    .grid-item3,
+    .grid-item4 {
+      grid-column: auto; 
+      grid-row: auto; 
+    }
+  }
+
+  @media (max-width: 576px) {
+    grid-template-rows: auto; 
+    grid-template-columns: auto; 
+    margin-left: 20px; 
+    margin-right: 20px;
+  }
+
+  .deal_button{
+    background-color: rgba(27, 136, 244, 1);
+    border-radius: 8px;
+    padding : 10px;
+    width: 120px;
+    margin-left: 12%;
+    margin-top: 8%;
+    transition: background-color 0.3s ease;
+
+  }
+
+  button:hover {
+    background-color: #2980b9;
+    cursor: pointer;
+  }
+
+ 
+}
+
+//ButtonTag
+.tag {
+ 
+  position: relative;
+  background-color: rgba(255, 119, 36, 1);
+  color: white;
+  height: max-content;
+  width: max-content;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+
+  img {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+  }
+
+
+}
+
+// image used in the main page 
+img {
+  height: 150px;
+  width: 180px;
+  margin-left: 30px;
+ 
+}
+
+:root {
+    --max-width: 1100px;
+    --border-radius: 12px;
+      font-family: sans-serif;
+      color: #212731;
+      
+  }
+  
+   h2{
+    margin-left: 150px;
+   }
+  html,
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+  
+  }
+  
+  body {
+    background-color :rgba(251, 252, 253, 1);
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    html {
+      color-scheme: dark;
+    }
+  }
+
+
+  //navbar
+
+.topnav {
+  overflow: hidden;
+  background-color: $navbar-bg;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+
+  a {
+    
+   
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin-left: 90px;
+    color: $link-color;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+  input{
+    display: inline-flex;
+    float: left;
+    height: 20px;
+    margin-left: 200px;
+    margin-right: 100px;
+    background-color: $search-icon-color;
+    border-radius: 6px;
+  }
+  
+
+}
+
+// rating 
+
+.rate-color{
+  background-color: rgba(243, 249, 255, 1);
+  text-align: center;
+  color: #0056b3;
+  padding: 6px;
+  border-radius: 8px;
+  width: fit-content;
+  margin-top: 0;
+  margin-left: 10%;
+  margin-bottom: 20%;
+  height: fit-content;
+
+  @media(max-width:992px){
+   height: auto;
+   width: auto;
+  }
+}
+
+
+//Card
+
+.grid-container {
+
+  display: grid;
+  width: fit-content;
+  border-radius: 8px;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: rgba(255, 255, 255, 1);
+  margin-left: 150px;
+  margin-right: 150px;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  row-gap: 3px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns:  3fr repeat(5, 1fr); 
+  }
+
+  @media (max-width: 992px) {
+    grid-template-columns: auto; 
+    margin-right: 100px;
+  }
+
+
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: auto;
+      grid-template-rows: repeat(2, 1fr); 
+      margin-left: 20px; 
+      margin-right: 20px; 
+    }
+    
+    .grid-item1,
+    .grid-item2,
+    .grid-item3,
+    .grid-item4,
+    .grid-item5,
+    .grid-item6 {
+      grid-column: auto; 
+      grid-row: auto; 
+    }
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns:  auto; 
+    grid-template-rows: 4;
+    margin-left: 20px; 
+    margin-right: 20px;
+  }
+
+
+
+  .grid-item1{
+    grid-column: 1 / span 1;
+    grid-row: 1 ;
+
+   
+  }
+  .grid-item2{
+    grid-column: 1 / span 1;
+    grid-row: 2 ;
+    
+  }
+  .grid-item3{
+    grid-column:  2 / span 2;
+    grid-row: 2 ;
+  }
+  .grid-item4{
+    grid-column:  2 / span 2;
+    grid-row: 3;
+
+    .show-more{
+      margin-top: 8%;
+      color: rgba(27, 136, 244, 1);
+      
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      
+    }
+    .firstList {
+
+      ul{
+      background-color:rgba(255, 244, 237, 1);
+      padding: 10px; 
+      border-radius: 10px; 
+      
+    }
+
+    }
+    .highlight {
+      color: blue;
+      background-color: rgba(255, 255, 255, 0.5); 
+      padding: 10px 6px; 
+      line-height: 30px;
+     
+  }
+}
+  .grid-item5{
+    grid-column : 5 /span 1 ;
+    grid-row : 2 ;
+  }
+  .grid-item6{
+    grid-column: 5/span 1 ;
+    grid-row: 3;
+  }
+
+  .primary{
+    background-color: rgba(27, 136, 244, 1);
+    border-radius: 8px;
+    padding : 10px;
+    width: 120px;
+    margin-left: 12%;
+    transition: background-color 0.3s ease;
+
+  }
+
+  button:hover {
+    background-color: #2980b9;
+    cursor: pointer;
+  }
+ 
+}
+
+
+//newsletter
+
+.newsletter-container {
+  width: 100%;
+  text-align: center; 
+  display: flex;
+  flex-direction: row;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+
+
+.email-input {
+  width: 200px; 
+  padding: 8px;
+  margin-right: 10px;
+  margin-left : 15px; 
+  background-color: white;
+  margin-top: 20px; 
+  border-radius: 8px;
+}
+
+
+.signup-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  background-color: #0056b3; 
+}
+
+
+//Footer 
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+  background-color: rgba(33, 39, 49, 1);
+  color: white;
+ 
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 90px;
+  margin-left: 90px;
+
+
+h4 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ li {
+  margin-bottom: 5px;
+  &:hover {
+    color: $link-hover-color;
+  }
+  cursor: pointer;
+}
+
+}
